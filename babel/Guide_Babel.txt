@@ -1,0 +1,56 @@
+Guide till användning av babel i projekt.
+Innehåller installation av babel och behövande tillbehör.
+
+1 Skaffa Node.js på :https://nodejs.org/en/
+Välj rekommenderad version.
+Node.js är ett javascripts byggt tillbehör som behövs när du ska köra babel.
+
+2 Skapa en projekt mapp
+
+3 Klicka på desitnations baren i mappen där den visar destinationen på projekts
+
+4 ta bort texten och skriv in cmd och klicka på enter
+
+5 nu när du har fått upp cmd rutan så ska du skaffa något som heter package.json vilket behövs för babel.
+
+6 nu skriv "npm init" och tryck enter
+
+7 nu ska du speciallicera package.json så det passar dig det du ska fylla in är i exakt ordining
+
+Namn
+Version
+Beskrivning
+Start punkt
+Test Kommando
+Git repository
+Keyword
+Author
+License
+
+Om du inte har erfarenhet av detta så är det enda viktiga som du behöver ändra är
+
+Namn
+Beskrivning
+Author
+
+allt annat kan vara default och du behöver bara trycka enter.
+
+8 nu har du ditt package.json och ska skaffa babel
+
+9 gå till :https://babeljs.io/docs/setup/ här kan du välja olika versionen för olika saker men vi ska välja CLI vilket funkar för det mesta.
+
+nu tas du ner till rätt inställningar för babel cli
+
+10 nu ska du installer babel cli och du ska skriva in nu i cmd "npm install --save-dev babel-cli"
+en mänga olika saker kommer nu laddas ner till mappen för projekt och babel är installerat.
+
+11 nu för att använda babel så måste du lägga dit kommandon för det du vill göra under script i ditt package.json
+
+12 så öppna package.json i din valda text editor och leta fram "scripts" taggen. om den inte finns där lägg dit en egen efter version taggen och det ska see ut så här "  "scripts": { "" };, " utan de två prickarna i slutet och början.
+
+13 nu kan du göra olika kommandon genom att lägga dit dom inom {} i scripts text {"build": " babel src -d lib"}
+fast med eget valfrit kommando för det du ska göra.
+
+14 för att köra kommandot gå till cmd igen och skriv detta kommando vilket i mitt fall är npm run build . där build byts ut mot vad du har döpt ditt kommando. 
+
+15 nu har du både installerat och fått reda på hur man använder babel 
